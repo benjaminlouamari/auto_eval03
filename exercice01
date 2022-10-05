@@ -1,1 +1,33 @@
+package auto_eval;
 
+import java.util.Scanner;
+
+public class Auto_eval_03 {
+
+	public static void main(String[] args) {
+		
+		int RANDOM = (int)(Math.random()*40000) + 10000;
+		//System.out.println(RANDOM);
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Entrez un nombre entre 10.000 et 40.000: ");
+		int NUMBER = scanner.nextInt();
+		
+		while(NUMBER != RANDOM) {
+			
+			if(NUMBER > RANDOM) {
+				System.out.println("Trop grand! Réessayez: ");
+			}
+			else {
+				System.out.println("Trop petit! Réessayez: ");
+			}
+			NUMBER = scanner.nextInt();
+			
+		}
+		scanner.close();
+		System.out.println("Bravo, vous avez trouvé !");
+		
+	}
+
+}
