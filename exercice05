@@ -1,0 +1,26 @@
+package auto_eval;
+
+import java.util.Scanner;
+
+public class Auto_eval_03 {
+
+	public static void main(String[] args) {
+		
+		int NUMBER = 0;
+		
+		for(int i = 700; i <= 800; i++) {
+			if(i % 8 == 7 && i % 12 == 7 && i % 15 == 7) {
+				NUMBER = i;
+			}
+		}
+		
+		if(NUMBER == 0) {
+			System.out.println("Il n'y a aucune correspondance.");
+		}
+		else {
+			System.out.println("Le nombre est " + NUMBER);
+		}
+		
+	}
+
+}
