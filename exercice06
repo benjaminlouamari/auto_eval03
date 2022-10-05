@@ -1,0 +1,40 @@
+package auto_eval;
+
+import java.util.Scanner;
+
+public class Auto_eval_03 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Entrez un nombre à convertir en binaire: ");
+		int NUMBER = scanner.nextInt();
+		int BIN = 1;
+		int EXP = 0;
+		String NUMBER_BIN = "";
+		
+		while(NUMBER > BIN) {
+			BIN *= 2;
+			EXP++;
+		}
+		
+		while(EXP >= 0) {
+			
+			if(NUMBER - BIN >= 0) {
+				NUMBER -= BIN;
+				NUMBER_BIN += '1';
+			}
+			else if(EXP >= 0) {
+				NUMBER_BIN += '0';
+			}
+			
+			BIN /= 2;
+			EXP--;
+		}
+		
+		System.out.println(NUMBER_BIN);
+		
+	}
+
+}
