@@ -1,0 +1,31 @@
+package auto_eval;
+
+import java.util.Scanner;
+
+public class Auto_eval_03 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Entrez un nombre: ");
+		int NUMBER = scanner.nextInt();
+		
+		scanner.close();
+		
+		for(int y = 0; y < NUMBER; y++) {
+			
+			for(int x = 0; x < NUMBER; x++) {
+				if(y > x) {
+					System.out.print(' ');
+				}
+				else {
+					System.out.print('*');
+				}
+			}
+			System.out.println("");
+			
+		}
+	}
+
+}
