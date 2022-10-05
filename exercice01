@@ -11,7 +11,7 @@ public class Auto_eval_03 {
 
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Entrez un nombre entre 10.000 et 40.000: ");
+		System.out.println("Entrez un nombre entre 10.000 et 50.000: ");
 		int NUMBER = scanner.nextInt();
 		
 		while(NUMBER != RANDOM) {
